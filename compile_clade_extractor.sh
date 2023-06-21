@@ -1,1 +1,3 @@
+# libclade.so is from the Hexagon SDK (version 3.5.4)
+# I have included it in the repo in case they remove it from the SDK, but probably download it urself and don't use random shared libraries from the internet
 clang -g -fPIC -Wl,-rpath,./ -L. -l:libclade.so -l:libclade2.so -I /home/mitchbuntu/Qualcomm/Hexagon_SDK/3.5.4/tools/HEXAGON_Tools/8.3.07/Tools/include -o clade_extractor clade_extractor_pixel_5.c
