@@ -1,0 +1,1 @@
+clang -g -fPIC -Wl,-rpath,./ -L. -l:libclade.so -l:libclade2.so -I /home/mitchbuntu/Qualcomm/Hexagon_SDK/3.5.4/tools/HEXAGON_Tools/8.3.07/Tools/include -o clade_extractor clade_extractor_pixel_5.c
