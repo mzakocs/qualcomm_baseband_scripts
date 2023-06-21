@@ -1,6 +1,7 @@
 # qualcomm_baseband_scripts
 Collection of scripts for reversing Qualcomm baseband / modem firmware
-All offsets/addresses in the scripts have been updated to the Pixel 5 March firmware. All offsets will need to be changed if using a different binary.
+
+All offsets/addresses in the scripts have been updated to the Pixel 5 March firmware and need to be changed if using a different version.
 
 # Merging
 `merge_modem_firmware.py` Merges all of the `modem.b**` (`modem.b00`, `modem.b01`, etc.) files into a single monolithic binary named `modem.bin`. This makes it much easier to load into IDA and Ghidra.
