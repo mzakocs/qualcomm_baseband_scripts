@@ -96,12 +96,11 @@ int main(int argc, char** argv) {
     clade_dict_ptrs[1] = clade_dict_addr + 0x2000;
     clade_dict_ptrs[2] = clade_dict_addr + 0x4000;
     uint64_t clade_compressed_ptr = 0xCD100000;
-    // uint64_t clade_compressed_ptr_lo = 0xcf2e0000;
+    uint64_t clade_compressed_ptr_hi = 0xcf2e0000;
     // Setup pd params
     static clade_pd_params_t pd;
     pd.comp = clade_compressed_ptr;
-    pd.exc_hi = clade_compressed_ptr;
-    // pd.exc_lo = clade_compressed_ptr_lo;
+    pd.exc_hi = clade_compressed_ptr_hi;
     // Setup clade config
     static clade_config_t config;
     config.region = clade_compressed_ptr;
